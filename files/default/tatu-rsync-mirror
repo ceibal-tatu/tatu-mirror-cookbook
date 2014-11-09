@@ -1,0 +1,6 @@
+# /etc/cron.d/tatu-mirror-rsync: mirrors the tatu master repository.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+*/30 * * * *   root /usr/bin/tatu-rsync-mirror
